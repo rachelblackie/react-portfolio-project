@@ -1,0 +1,7 @@
+.Container {
+  margin-right: 0;
+  margin-left: 0;
+}
+.Nav {
+  font-family: var(--main-font);
+}
