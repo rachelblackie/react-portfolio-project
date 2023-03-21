@@ -1,0 +1,10 @@
+.text-on-image {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  justify-content: center;
+}
+.projects-arrow a {
+  color: var(--charcoal);
+  font-size: 40px;
+}

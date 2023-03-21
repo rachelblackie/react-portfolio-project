@@ -1,11 +1,18 @@
 :root {
   --charcoal: #212529;
-  --main-font: "Poppins", sans-serif;
+  --main-font: "Poppins";
   --heading-font: "Abril Fatface", sans-serif;
 }
-h1 {
+h1,
+h2 {
   font-family: var(--heading-font);
+  color: var(--charcoal);
 }
+
+p,
+h3,
+h4,
 footer {
   font-family: var(--main-font);
+  color: var(--charcoal);
 }
