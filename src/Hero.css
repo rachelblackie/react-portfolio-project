@@ -1,10 +1,29 @@
 .text-on-image {
   position: absolute;
   top: 40%;
-  left: 40%;
-  justify-content: center;
+  left: 30%;
+  width: 40%;
+  background: rgb(255, 255, 255, 0.4);
+  padding: 25px;
+  border-radius: 5px;
 }
-.projects-arrow a {
+.projects-arrow {
   color: var(--charcoal);
   font-size: 40px;
+}
+.projects-arrow:hover {
+  color: white;
+  cursor: pointer;
+}
+.hero-background {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 450px) {
+  .text-on-image {
+    width: 70%;
+    left: 15%;
+    top: 25%;
+  }
 }

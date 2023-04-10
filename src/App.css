@@ -12,7 +12,12 @@ h2 {
 p,
 h3,
 h4,
+li,
 footer {
   font-family: var(--main-font);
   color: var(--charcoal);
+}
+.small-divider {
+  width: 50%;
+  margin: 0 auto;
 }

@@ -1,0 +1,10 @@
+.about-me-photo {
+  max-height: 175px;
+  max-width: auto;
+}
+
+@media (max-width: 450px) {
+  .about-me-photo {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,13 @@
+.cv-image {
+  padding: 18px;
+  border: 2px solid var(--charcoal);
+}
+.cv-hr {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 450px) {
+  .cv-image {
+    margin-bottom: 15px;
+  }
+}
