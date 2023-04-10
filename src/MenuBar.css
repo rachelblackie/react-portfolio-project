@@ -1,7 +1,26 @@
-.Container {
-  margin-right: 0;
-  margin-left: 0;
-}
 .Nav {
   font-family: var(--main-font);
+}
+a {
+  color: white;
+}
+.navbar-right {
+  width: 20%;
+  display: block;
+}
+.navbar-left {
+  width: 20%;
+  font-family: var(--heading-font);
+}
+.language-select {
+  font-family: var(--main-font);
+}
+.language-icon {
+  color: white;
+}
+.navbar-collapse {
+  text-align: right;
+  margin-right: 10px;
+}
+@media (max-width: 450px) {
 }
