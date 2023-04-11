@@ -1,7 +1,7 @@
 import React from "react";
-import "./App.css";
-import "./Hero.css";
-import background from "./background.jpg";
+import "./styles/App.css";
+import "./styles/Hero.css";
+import background from "./images/background.jpg";
 
 function Hero(props) {
   let content = {
@@ -19,7 +19,7 @@ function Hero(props) {
     : (content = content.English);
 
   return (
-    <div className="head-text">
+    <div className="head-text" id="hero">
       <div className="head-image position-relative">
         <img
           src={background}
@@ -35,7 +35,9 @@ function Hero(props) {
           <h4>{content.subtitle}</h4>
 
           <div className="text-center projects-arrow">
-            <i className="fa-solid fa-circle-chevron-down"></i>
+            <a href="#recent-projects">
+              <i className="fa-solid fa-circle-chevron-down"></i>
+            </a>
           </div>
         </div>
       </div>

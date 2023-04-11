@@ -5,12 +5,12 @@ import RecentProjects from "./RecentProjects";
 import Cv from "./Cv";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
   let languageStoredInLocalStorage = localStorage.getItem("language");
   let [language, setLanguage] = useState(
-    languageStoredInLocalStorage ? languageStoredInLocalStorage : "Castellano"
+    languageStoredInLocalStorage ? languageStoredInLocalStorage : "English"
   );
   return (
     <div className="App">

@@ -7,11 +7,11 @@
   padding: 25px;
   border-radius: 5px;
 }
-.projects-arrow {
+.projects-arrow a {
   color: var(--charcoal);
   font-size: 40px;
 }
-.projects-arrow:hover {
+.projects-arrow a:hover {
   color: white;
   cursor: pointer;
 }

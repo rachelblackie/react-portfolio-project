@@ -2,9 +2,22 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "./MenuBar.css";
+import "./styles/MenuBar.css";
 
 function MenuBar(props) {
+  let content = {
+    English: {
+      navLinkOne: "About Me",
+      navLinkTwo: "Contact",
+    },
+    Español: {
+      navLinkOne: "Sobre Yo",
+      navLinkTwo: "Contacto",
+    },
+  };
+  props.language === "Español"
+    ? (content = content.Español)
+    : (content = content.English);
   return (
     <div className="container">
       <Navbar
@@ -21,9 +34,9 @@ function MenuBar(props) {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" className="nav-collapse">
             <Nav className="mx-auto Nav">
-              <Nav.Link href="#">CV</Nav.Link>
-              <Nav.Link href="#">About Me</Nav.Link>
-              <Nav.Link href="#">Contact</Nav.Link>
+              <Nav.Link href="#cv">CV</Nav.Link>
+              <Nav.Link href="#about-me">{content.navLinkOne}</Nav.Link>
+              <Nav.Link href="#contact">{content.navLinkTwo}</Nav.Link>
             </Nav>
 
             <Nav>

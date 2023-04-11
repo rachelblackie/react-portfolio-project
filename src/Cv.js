@@ -1,93 +1,170 @@
 import React from "react";
-import shecodesLogo from "./shecodesLogo.png";
-import onestopLogo from "./onestopLogo.PNG";
-import efLogo from "./efLogo.png";
-import "./App.css";
-import "./Cv.css";
+import shecodesLogo from "./images/shecodesLogo.png";
+import onestopLogo from "./images/onestopLogo.PNG";
+import efLogo from "./images/efLogo.png";
+import "./styles/App.css";
+import "./styles/Cv.css";
 
-export default function Cv() {
+function Cv(props) {
+  let content = {
+    English: {
+      shecodesTitle: (
+        <div>
+          <strong>Student</strong> @ SheCodes
+        </div>
+      ),
+      shecodesLocation: "Remote",
+      shecodesDescription: (
+        <ul>
+          <li>
+            Learned to code using HTML, CSS, Javascript, VS Code, GitHub,
+            Bootstrap, APIs, & React
+          </li>
+          <li>Created web pages & applications</li>
+        </ul>
+      ),
+      onestopTitle: (
+        <div>
+          <strong>Teacher</strong> @ 1-StopEDU
+        </div>
+      ),
+      onestopLocation: "Remote",
+      onestopDescription: (
+        <ul>
+          <li>Taught one-on-one EAL lessons for children & adults via Skype</li>
+          <li>Used CMS to track student progress</li>
+        </ul>
+      ),
+      efTitle: (
+        <div>
+          <strong>Teacher & Academic Manager</strong> @ EF International
+          Language Campus
+        </div>
+      ),
+      efLocation: "Victoria, BC, Canada",
+      efDescription: (
+        <ul>
+          <li>Taught EAL to adult & teenage students</li>
+          <li>Assisted in the training & management of the academic team</li>
+          <li>
+            Used CMS to track student progress & SharePoint for staff resources
+          </li>
+        </ul>
+      ),
+      goToLinkedIn: "See more on ",
+    },
+    Español: {
+      shecodesTitle: (
+        <div>
+          <strong>Estudiante</strong> @ SheCodes
+        </div>
+      ),
+      shecodesLocation: "Remoto",
+      shecodesDescription: (
+        <ul>
+          <li>
+            Aprendí a codificar usando HTML, CSS, Javascript, VS Code, GitHub,
+            Bootstrap, APIs, & React
+          </li>
+          <li>Creé páginas y aplicaciones web</li>
+        </ul>
+      ),
+      onestopTitle: (
+        <div>
+          <strong>Maestra</strong> @ 1-StopEDU
+        </div>
+      ),
+      onestopLocation: "Remote",
+      onestopDescription: (
+        <ul>
+          <li>
+            Enseñé lecciones de inglés particulares para niños y adultos a
+            través de Skype
+          </li>
+          <li>Usé CMS para monitorear el progreso de los estudiantes</li>
+        </ul>
+      ),
+      efTitle: (
+        <div>
+          <strong>Maestra y Coordinadora Academica</strong> @ EF International
+          Language Campus
+        </div>
+      ),
+      efLocation: "Victoria, CB, Canadá",
+      efDescription: (
+        <ul>
+          <li>Enseñé inglés a estudiantes adultos y adolescentes.</li>
+          <li>Ayudé en la formación y gestión del equipo académico.</li>
+          <li>
+            Usé CMS para monitorear el progreso de los estudiantes y SharePoint
+            para los recursos del personal
+          </li>
+        </ul>
+      ),
+      goToLinkedIn: "Ver más en ",
+    },
+  };
+  props.language === "Español"
+    ? (content = content.Español)
+    : (content = content.English);
+
   return (
-    <div>
+    <div id="cv">
       <hr />
       <h1 className="text-center">Curriculum Vitae</h1>
       <div className="row m-5">
         {" "}
-        <div className="col-4-lg text-center my-auto">
+        <div className="col-lg-4 text-center my-auto">
           <img
             src={shecodesLogo}
             alt="SheCodes Logo"
             className="img-fluid cv-image rounded"
           ></img>
         </div>
-        <div className="col-8-lg my-auto">
-          <h3>
-            <strong>Student</strong> @ SheCodes
-          </h3>
-          <h4>Remote</h4>
+        <div className="col-lg-8 my-auto">
+          <h3>{content.shecodesTitle}</h3>
+          <h4>{content.shecodesLocation}</h4>
           <h4>2022-2023</h4>
-          <ul>
-            <li>
-              Learned to code using HTML, CSS, Javascript, VS Code, GitHub,
-              Bootstrap, APIs, & React
-            </li>
-            <li>Created web pages & applications</li>
-          </ul>
+          <div>{content.shecodesDescription}</div>
         </div>
       </div>
       <hr className="small-divider" />
       <div className="row m-5">
         {" "}
-        <div className="col-4-lg text-center my-auto">
+        <div className="col-lg-4 text-center my-auto">
           <img
             src={onestopLogo}
             alt="Onestop Logo"
             className="img-fluid cv-image rounded"
           ></img>
         </div>
-        <div className="col-8-lg my-auto">
-          <h3>
-            <strong>Teacher</strong> @ 1-StopEDU
-          </h3>
-          <h4>Remote</h4>
+        <div className="col-lg-8 my-auto">
+          <h3>{content.onestopTitle}</h3>
+          <h4>{content.onestopLocation}</h4>
           <h4>2020-2021</h4>
-          <ul>
-            <li>
-              Taught one-on-one EAL lessons for children & adults via Skype
-            </li>
-            <li>Used CMS to track student progress</li>
-          </ul>
+          <div>{content.onestopDescription}</div>
         </div>
       </div>
       <hr className="small-divider" />
       <div className="row m-5">
         {" "}
-        <div className="col-4-lg text-center my-auto">
+        <div className="col-lg-4 text-center my-auto">
           <img
             src={efLogo}
             alt="EF logo"
             className="img-fluid cv-image rounded"
           ></img>
         </div>
-        <div className="col-8-lg my-auto">
-          <h3>
-            <strong>Teacher & Academic Manager</strong> @ EF International
-            Language Campus
-          </h3>
-          <h4>Victoria, BC, Canada</h4>
+        <div className="col-lg-8 my-auto">
+          <h3>{content.efTitle}</h3>
+          <h4>{content.efLocation}</h4>
           <h4>2018-2019</h4>
-          <ul>
-            <li>Taught EAL to adult & teenage students</li>
-            <li>Assisted in the training & management of the academic team</li>
-            <li>
-              Used CMS to track student progress & SharePoint for staff
-              resources
-            </li>
-          </ul>
+          <div>{content.efDescription}</div>
         </div>
       </div>
       <div>
         <h4 className="text-center m-5">
-          See more on{" "}
+          {content.goToLinkedIn}{" "}
           <a
             href="https://www.linkedin.com/in/rachel-blackie-273b18127/"
             target="_blank"
@@ -100,3 +177,4 @@ export default function Cv() {
     </div>
   );
 }
+export default Cv;

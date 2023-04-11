@@ -1,12 +1,23 @@
 import React from "react";
-import "./Contact.css";
+import "./styles/Contact.css";
 
-export default function Contact() {
+function Contact(props) {
+  let content = {
+    English: {
+      title: "Contact",
+    },
+    Español: {
+      title: "Contacto",
+    },
+  };
+  props.language === "Español"
+    ? (content = content.Español)
+    : (content = content.English);
   return (
-    <div>
+    <div id="contact">
       <hr />
       <div className="m-5">
-        <h2>Contact</h2>
+        <h2>{content.title}</h2>
         <h4 className="mt-3 email">
           <i class="fa-regular fa-envelope"></i>{" "}
           <a href="mailto:rachelannblackie@gmail.com">
@@ -17,3 +28,4 @@ export default function Contact() {
     </div>
   );
 }
+export default Contact;

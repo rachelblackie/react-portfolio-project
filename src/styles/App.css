@@ -21,3 +21,11 @@ footer {
   width: 50%;
   margin: 0 auto;
 }
+#cv,
+#about-me,
+#contact {
+  scroll-margin-top: 50px;
+}
+#recent-projects {
+  scroll-margin-top: 70px;
+}
