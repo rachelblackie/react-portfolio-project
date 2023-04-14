@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./styles/MenuBar.css";
 
 function MenuBar(props) {
+  const [expanded, setExpanded] = useState(false);
   let content = {
     English: {
-      navLinkOne: "About Me",
-      navLinkTwo: "Contact",
+      navLinkAbout: "About Me",
+      navLinkContact: "Contact",
     },
     Español: {
-      navLinkOne: "Sobre Yo",
-      navLinkTwo: "Contacto",
+      navLinkAbout: "Sobre Mí",
+      navLinkContact: "Contacto",
     },
   };
   props.language === "Español"
@@ -26,17 +27,27 @@ function MenuBar(props) {
         className="fixed-top"
         expand="lg"
         collapseOnSelect
+        expanded={expanded}
       >
         <Container>
           <Navbar.Brand href="#" className="navbar-left">
             RB
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => setExpanded(!expanded)}
+          />
           <Navbar.Collapse id="responsive-navbar-nav" className="nav-collapse">
             <Nav className="mx-auto Nav">
-              <Nav.Link href="#cv">CV</Nav.Link>
-              <Nav.Link href="#about-me">{content.navLinkOne}</Nav.Link>
-              <Nav.Link href="#contact">{content.navLinkTwo}</Nav.Link>
+              <Nav.Link href="#cv" onClick={() => setExpanded(false)}>
+                CV
+              </Nav.Link>
+              <Nav.Link href="#about-me" onClick={() => setExpanded(false)}>
+                {content.navLinkAbout}
+              </Nav.Link>
+              <Nav.Link href="#contact" onClick={() => setExpanded(false)}>
+                {content.navLinkContact}
+              </Nav.Link>
             </Nav>
 
             <Nav>
@@ -47,6 +58,7 @@ function MenuBar(props) {
                 target="_blank"
                 rel="noopener
                 noreferrer"
+                onClick={() => setExpanded(false)}
               >
                 <i className="fa-brands fa-github"></i>
               </Nav.Link>{" "}
@@ -55,6 +67,7 @@ function MenuBar(props) {
                 title="See Rachel Blackie's LinkedIn profile"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => setExpanded(false)}
               >
                 <i className="fa-brands fa-linkedin"></i>
               </Nav.Link>{" "}
@@ -67,7 +80,10 @@ function MenuBar(props) {
               <select
                 className="custom-select"
                 value={props.language}
-                onChange={(e) => props.handleSetLanguage(e.target.value)}
+                onChange={(e) => {
+                  props.handleSetLanguage(e.target.value);
+                  setExpanded(false);
+                }}
               >
                 <option value="English">English</option>
                 <option value="Español">Español</option>
