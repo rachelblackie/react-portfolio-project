@@ -22,5 +22,6 @@ a {
   text-align: right;
   margin-right: 10px;
 }
+
 @media (max-width: 450px) {
 }
