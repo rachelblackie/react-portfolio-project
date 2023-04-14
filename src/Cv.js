@@ -66,7 +66,7 @@ function Cv(props) {
             Aprendí a codificar usando HTML, CSS, Javascript, VS Code, GitHub,
             Bootstrap, APIs, & React
           </li>
-          <li>Creé páginas y aplicaciones web</li>
+          <li>Creé páginas & aplicaciones web</li>
         </ul>
       ),
       onestopTitle: (

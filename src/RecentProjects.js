@@ -21,7 +21,7 @@ function RecentProjects(props) {
       reactWeatherButton: "Abrir Aplicación Meteorológica React",
       shecodesChallengesTitle: "Retos de SheCodes",
       shecodesChallengesBlurb:
-        "Los Retos de SheCodes son concursos de codificación mensuales lanzados por SheCodes en los que los participantes crean una página web sobre un tema determinado. Haga clic en el botón de abajo para ver lo que he creado para SheCodes Challenges hasta ahora.",
+        "Los Retos de SheCodes son concursos de codificación mensuales lanzados por SheCodes en los que los participantes crean una página web sobre un tema determinado. Haga clic en el botón de abajo para ver lo que he creado para los Retos de SheCodes hasta ahora.",
       shecodesChallengesButton: "Abrir los Retos de SheCodes de Rachel",
     },
   };
