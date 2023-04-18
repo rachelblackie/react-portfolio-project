@@ -59,7 +59,7 @@ function Cv(props) {
           <strong>Estudiante</strong> @ SheCodes
         </div>
       ),
-      shecodesLocation: "Remoto",
+      shecodesLocation: "Online",
       shecodesDescription: (
         <ul>
           <li>
@@ -74,7 +74,7 @@ function Cv(props) {
           <strong>Maestra</strong> @ 1-StopEDU
         </div>
       ),
-      onestopLocation: "Remote",
+      onestopLocation: "Online",
       onestopDescription: (
         <ul>
           <li>
