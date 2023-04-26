@@ -70,7 +70,16 @@ function MenuBar(props) {
                 onClick={() => setExpanded(false)}
               >
                 <i className="fa-brands fa-linkedin"></i>
-              </Nav.Link>{" "}
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.linkedin.com/in/rachel-blackie-273b18127/"
+                title="See Rachel Blackie's CV"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setExpanded(false)}
+              >
+                <i class="fa-solid fa-file-pdf"></i>
+              </Nav.Link>
             </Nav>
             {""}
             <div className="language-select ms-3">
