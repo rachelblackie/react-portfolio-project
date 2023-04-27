@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-project/static/css/main.a3f9c5e6.css",
+    "main.js": "/react-portfolio-project/static/js/main.0bd90d79.js",
+    "static/js/787.5da09daf.chunk.js": "/react-portfolio-project/static/js/787.5da09daf.chunk.js",
+    "static/media/respiroYoga.PNG": "/react-portfolio-project/static/media/respiroYoga.a30ef0ee88b311a02ba0.PNG",
+    "static/media/shecodesChallenges.PNG": "/react-portfolio-project/static/media/shecodesChallenges.6d5628ca9b11d4e7de10.PNG",
+    "static/media/background.jpg": "/react-portfolio-project/static/media/background.edaab93f1e1398942829.jpg",
+    "static/media/onestopLogo.PNG": "/react-portfolio-project/static/media/onestopLogo.976d5f850706c1c2b4c6.PNG",
+    "static/media/WeatherAppScreenshot.png": "/react-portfolio-project/static/media/WeatherAppScreenshot.9053ab0bdcf5bc90efc0.png",
+    "static/media/headshot.jpg": "/react-portfolio-project/static/media/headshot.cd334f556ce0a26fc31c.jpg",
+    "static/media/shecodesLogo.png": "/react-portfolio-project/static/media/shecodesLogo.730fae98cc5d393f8c7e.png",
+    "index.html": "/react-portfolio-project/index.html",
+    "main.a3f9c5e6.css.map": "/react-portfolio-project/static/css/main.a3f9c5e6.css.map",
+    "main.0bd90d79.js.map": "/react-portfolio-project/static/js/main.0bd90d79.js.map",
+    "787.5da09daf.chunk.js.map": "/react-portfolio-project/static/js/787.5da09daf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3f9c5e6.css",
+    "static/js/main.0bd90d79.js"
+  ]
+}
