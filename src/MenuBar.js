@@ -72,7 +72,7 @@ function MenuBar(props) {
                 <i className="fa-brands fa-linkedin"></i>
               </Nav.Link>
               <Nav.Link
-                href="https://drive.google.com/file/d/1y2AP1Gn-jodFGnIHZ5LxsyT_tgyUPX2O/view?usp=sharing"
+                href="https://drive.google.com/file/d/1SK6yOsV2oDgHE0IHt2b2pHaXEop0Cloh/view?usp=sharing"
                 title="See Rachel Blackie's CV"
                 target="_blank"
                 rel="noopener noreferrer"
