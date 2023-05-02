@@ -73,7 +73,7 @@ function MenuBar(props) {
               </Nav.Link>
               <Nav.Link
                 href="https://drive.google.com/file/d/1SK6yOsV2oDgHE0IHt2b2pHaXEop0Cloh/view?usp=sharing"
-                title="See Rachel Blackie's CV"
+                title="Rachel Blackie's CV"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setExpanded(false)}
