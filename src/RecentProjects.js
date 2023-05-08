@@ -30,7 +30,7 @@ function RecentProjects(props) {
       shecodesChallengesButton: "Abrir los Retos de SheCodes de Rachel",
       respiroYogaTitle: "Sitio Web de Respiro Yoga",
       respiroYogaBlurb:
-        "Creé este sitio web para un pequeño estudio de yoga local. Incluye información sobre los diferentes tipos de clases que se ofrece, un carrusel de fotos del estudio y una biografía del propietaria/instructora del estudio; y todo se puede mostrar en español y en inglés. Trabajé con la propietaria del estudio para garantizar que el proyecto incluyera todo lo que ella deseaba en términos de estilo y contenido.",
+        "Creé este sitio web para un pequeño estudio de yoga local. Incluye información sobre los diferentes tipos de clases que se ofrecen, un carrusel de fotos del estudio y una biografía de la propietaria/instructora del estudio; y todo se puede mostrar en español y en inglés. Trabajé con la propietaria del estudio para garantizar que el proyecto incluyera todo lo que ella deseaba en términos de estilo y contenido.",
       respiroYogaButton: "Abrir el sitio web de Respiro Yoga",
     },
   };
