@@ -80,6 +80,46 @@ function RecentProjects(props) {
         </div>
       </div>
       <hr className="small-divider" />
+
+      <div className="row m-5">
+        <div className="col-lg">
+          <img
+            src={shecodesChallenges}
+            alt="Past SheCodes Challenges Screenshot"
+            className="img-fluid border rounded"
+          ></img>
+        </div>
+        <div className="col-lg">
+          <h2>{content.shecodesChallengesTitle}</h2>
+          <p>{content.shecodesChallengesBlurb}</p>
+          <div className="tech-icons row">
+            <div class="col text-center">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML</p>
+            </div>
+            <div className="col text-center">
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS</p>
+            </div>
+            <div className="col text-center">
+              <i class="fa-brands fa-square-js"></i>
+              <p>JavaScript</p>
+            </div>
+            <div className="col text-center">
+              <i class="fa-brands fa-bootstrap"></i>
+              <p>Bootstrap</p>
+            </div>
+          </div>
+          <a
+            href="https://rachelsshecodeschallenges.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-dark"
+          >
+            {content.shecodesChallengesButton}
+          </a>
+        </div>
+      </div>
       <div className="row m-5">
         <div className="col-lg">
           <img
@@ -124,45 +164,6 @@ function RecentProjects(props) {
         </div>
       </div>
       <hr className="small-divider" />
-      <div className="row m-5">
-        <div className="col-lg">
-          <img
-            src={shecodesChallenges}
-            alt="Past SheCodes Challenges Screenshot"
-            className="img-fluid border rounded"
-          ></img>
-        </div>
-        <div className="col-lg">
-          <h2>{content.shecodesChallengesTitle}</h2>
-          <p>{content.shecodesChallengesBlurb}</p>
-          <div className="tech-icons row">
-            <div class="col text-center">
-              <i class="fa-brands fa-html5"></i>
-              <p>HTML</p>
-            </div>
-            <div className="col text-center">
-              <i class="fa-brands fa-css3-alt"></i>
-              <p>CSS</p>
-            </div>
-            <div className="col text-center">
-              <i class="fa-brands fa-square-js"></i>
-              <p>JavaScript</p>
-            </div>
-            <div className="col text-center">
-              <i class="fa-brands fa-bootstrap"></i>
-              <p>Bootstrap</p>
-            </div>
-          </div>
-          <a
-            href="https://rachelsshecodeschallenges.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-dark"
-          >
-            {content.shecodesChallengesButton}
-          </a>
-        </div>
-      </div>
     </div>
   );
 }
