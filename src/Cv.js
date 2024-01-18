@@ -2,12 +2,26 @@ import React from "react";
 import shecodesLogo from "./images/shecodesLogo.png";
 import onestopLogo from "./images/onestopLogo.PNG";
 import efLogo from "./images/efLogo.png";
+import endpointLogo from "./images/endpointLogo.png";
 import "./styles/App.css";
 import "./styles/Cv.css";
 
 function Cv(props) {
   let content = {
     English: {
+      endpointTitle:(
+         <div>
+          <strong>Frontend Dev Intern</strong> @ End Point Dev
+        </div>
+      ),
+      
+      endpointDescription: (
+         <ul>
+          <li>Completed company bootcamp training program
+          </li>
+          <li>Frontend development in React, HTML, CSS, and Javascript for client websites and applcations, as well as internal projects</li>
+        </ul>
+      ),
       shecodesTitle: (
         <div>
           <strong>Student</strong> @ SheCodes
@@ -54,6 +68,20 @@ function Cv(props) {
       goToLinkedIn: "See more on ",
     },
     Español: {
+        endpointTitle:(
+         <div>
+          <strong>Practicante de Desarrollo Frontend</strong> @ End Point Dev
+        </div>
+      ),
+      
+      endpointDescription: (
+         <ul>
+          <li>Completé el programa de formación bootcamp de la empresa.
+          </li>
+          <li>Desarrollo frontend en React, HTML, CSS y Javascript para sitios web y aplicaciones de clientes, así como proyectos internos.</li>
+        </ul>
+      ),
+      
       shecodesTitle: (
         <div>
           <strong>Estudiante</strong> @ SheCodes
@@ -112,6 +140,23 @@ function Cv(props) {
     <div id="cv">
       <hr />
       <h1 className="text-center">Curriculum Vitae</h1>
+      <div className="row m-5">
+        {" "}
+        <div className="col-lg-4 text-center my-auto">
+          <img
+            src={endpointLogo}
+            alt="End Point Logo"
+            className="img-fluid cv-image rounded"
+          ></img>
+        </div>
+        <div className="col-lg-8 my-auto">
+          <h3>{content.endpointTitle}</h3>
+          <h4>{content.shecodesLocation}</h4>
+          <h4>2023-Present</h4>
+          <div>{content.endpointDescription}</div>
+        </div>
+      </div>
+      <hr className="small-divider" />
       <div className="row m-5">
         {" "}
         <div className="col-lg-4 text-center my-auto">
