@@ -81,11 +81,7 @@ function Cv(props) {
           <li>Desarrollo frontend en React, HTML, CSS y Javascript para sitios web y aplicaciones de clientes, así como proyectos internos.</li>
         </ul>
       ),
-      shecodesTitle: (
-        <div>
-          <strong>Student</strong> @ SheCodes
-        </div>
-      ),
+      
       shecodesTitle: (
         <div>
           <strong>Estudiante</strong> @ SheCodes
