@@ -12,9 +12,9 @@ function Cv(props) {
          <div>
           <strong>Frontend Dev Intern</strong> @ End Point
         </div>
-      ).
-      endpointLocation: "Remote",
-      endpointDescription:(
+      ),
+      
+      endpointDescription: (
          <ul>
           <li>Completed company bootcamp training program
           </li>
@@ -136,7 +136,7 @@ function Cv(props) {
         </div>
         <div className="col-lg-8 my-auto">
           <h3>{content.endpointTitle}</h3>
-          <h4>{content.endpointLocation}</h4>
+          <h4>{content.shecodesLocation}</h4>
           <h4>2023-Present</h4>
           <div>{content.endpointDescription}</div>
         </div>
